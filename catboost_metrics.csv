@@ -1,0 +1,8 @@
+Metric,Value
+Model,CatBoost
+Accuracy,0.9041794087665648
+Precision,0.9201798763350196
+Recall,0.874933190807055
+F1-score,0.896986301369863
+ROC AUC,0.96
+Kappa Score,0.808

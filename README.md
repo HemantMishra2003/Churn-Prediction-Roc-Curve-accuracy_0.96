@@ -49,16 +49,19 @@
    1.import importaant requirement / libraries
       
    2.import pickle
-       # pick my trained pickle model
+   
+       pick my trained pickle model
        with open('catboost_cat_model.pkl', 'rb') as file:
        model = pickle.load(file)
        
    3.make prediction
+   
           y_pred = model.predict(x_test) 
    4 .save ur prediction
+   
           import pandas as pd
 
-   df_pred = pd.DataFrame(y_pred, columns=['Prediction'])
+    df_pred = pd.DataFrame(y_pred, columns=['Prediction'])
      df_pred.to_csv('predictions/catboost_predictions.csv', index=False)
 
 
